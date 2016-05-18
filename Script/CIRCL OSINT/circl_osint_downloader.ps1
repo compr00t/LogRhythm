@@ -58,5 +58,5 @@ Get-Content C:\Temp\intels.txt | foreach { Invoke-WebRequest -Uri $_ | ConvertFr
 Copy-Item -Path C:\Temp\circl_temp.txt -Destination "\\$lr\C$\Program Files\LogRhythm\LogRhythm Job Manager\config\list_import\circl.txt"
 
 # Clean up
-# Remove-Item C:\Temp\intels.txt
-# Remove-Item C:\Temp\circl_temp.txt
+Remove-Item C:\Temp\intels.txt
+Remove-Item C:\Temp\circl_temp.txt
